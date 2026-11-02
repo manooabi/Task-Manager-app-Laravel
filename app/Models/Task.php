@@ -8,12 +8,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Task extends Model
 {
     //
-      public function User(): BelongsTo
+      public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
 
-          public function Status(): BelongsTo
+          public function status(): BelongsTo
     {
         return $this->belongsTo(Status::class);
     }
